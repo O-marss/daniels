@@ -47,6 +47,10 @@ h6 {
   font-family: montserrat;
 }
 
+img{
+  width: 100%;
+}
+
 /* Section Center Title */
 .section-title{
   margin-top: 50px;
@@ -313,3 +317,10 @@ span.gold-title {
   font-weight: 800;
   font-size: 18px;
 }
+
+/* !!Portfolio section style */
+#portfolio .nav-underline .nav-link:hover{
+  border: none;
+}
+
+
