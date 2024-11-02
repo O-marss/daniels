@@ -1,28 +1,254 @@
-*{
-    box-sizing: border-box;
+@font-face {
+  font-family: "montserrat";
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
-body{
-    margin: 0;
-    padding:0;
-    color: #fff;
+@font-face {
+  font-family: "poppin";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppin, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  color: #343434;
 }
 
 ul,
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
 a,
 a:visited,
-a:active{
-    text-decoration: none;
-    color: inherit;
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
-#home{
-    height: 100vh;
-    background-image: url(../imgs/bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: montserrat;
+}
+
+/* !!Home style */
+#home {
+  position: relative;
+  height: 100vh;
+  background-image: url(../imgs/bg.jpg);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+#home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 2;
+}
+
+.header-content h1 {
+  font-family: montserrat;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: montserrat;
+  text-align: center;
+}
+
+.dynamic-title {
+  float: none;
+  margin: 0 auto;
+  display: table;
+  width: auto;
+  font-size: 1.875rem;
+  line-height: 38px;
+  font-weight: 200;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+span.gold-title {
+  font-size: 1.875rem;
+  margin: -10px 0;
+}
+
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+  font-style: normal;
+}
+
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+
+.cd-headline.clip span {
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+.cd-headline.clip .cd-words-wrapper {
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.cd-headline.clip .cd-words-wrapper::after {
+  /* line */
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #aebcb9;
+}
+.cd-headline.clip b {
+  opacity: 0;
+}
+.cd-headline.clip b.is-visible {
+  opacity: 1;
+}
+
+.header-icons li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+/* !!About section style */
+
+.hero-img {
+  position: relative;
+  padding: 0 0 0 30px;
+}
+
+.hero-img::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 0px;
+  bottom: -30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+.side-title h2 {
+  position: relative;
+  font-size: 1.875rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.side-title h2::after {
+  content: ".";
+  position: absolute;
+}
+
+.side-title p {
+  color: #999;
+}
+
+.about-content {
+  font-size: 0.9375rem;
+  color: #748182;
+}
+
+.skills .progress {
+  width: 100%;
+  height: 1.5rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #f7f7f7;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+  position: relative;
+}
+
+.skills .progress h3 {
+  font-size: 13px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.skills .progress .progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 10%;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  transition: all 1s;
+}
+
+.about-btns {
+  margin-top: 20px;
+}
+
+.about-btns button {
+  padding: 10px 30px;
+  border: 1px solid #1c1c1c;
+  border-radius: 5px;
+  font-size: 13px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.about-btns .dark-btn {
+  background-color: #1c1c1c;
+  color: #eee;
+}
+
+.about-btns .dark-btn:hover {
+  background-color: #eee;
+  color: #1c1c1c;
+}
+
+.about-btns .light-btn {
+  background-color: #fff;
+  color: #1c1c1c;
+}
+
+.about-btns .light-btn:hover {
+  background-color: #1c1c1c;
+  color: #eee;
 }

@@ -1,0 +1,16 @@
+@media (min-width: 768px) {
+  #home .header-content .title .dynamic-title,
+  #home .header-content .title span.gold-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 993px) {
+}
+
+@media (min-width: 1200px) {
+  #home .header-content .title .dynamic-title,
+  #home .header-content .title span.gold-title {
+    font-size: 4rem;
+  }
+}
