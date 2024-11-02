@@ -323,4 +323,52 @@ span.gold-title {
   border: none;
 }
 
+.portfolio-card{
+  position: relative;
+}
 
+.portfolio-card-overlay{
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(10px);
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+.portfolio-card:hover .portfolio-card-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-card-overlay h3{
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 15px;
+  transform: translateY(-15px);
+  transition: all 0.5s;
+}
+
+.overlay-icons span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  border-radius: 50%;
+  border: 1px solid #111;
+  background: #111;
+  color: #eee;
+}
+
+.overlay-icons span:hover{
+  background-color: #eee;
+  color: #111;
+}
