@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    color: #fff;
+}
+
+ul,
+li{
+    list-style: none;
+}
+
+a,
+a:visited,
+a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+#home{
+    height: 100vh;
+    background-image: url(../imgs/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
