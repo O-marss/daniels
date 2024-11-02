@@ -372,3 +372,84 @@ span.gold-title {
   background-color: #eee;
   color: #111;
 }
+
+/* !!Portfolio section style */
+#testimonials{
+  background-color: #f7f7f7;
+}
+
+.testimonial-img{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 15px;
+}
+
+#testimonials .carousel-indicators [data-bs-target]{
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #d6d6d6;
+  transition: opacity 0.2s ease;
+  border-radius: 50%;
+  border: none;
+}
+
+#testimonials .carousel-indicators .active{
+  background-color: #869791;
+}
+
+.testimonial-content{
+  max-width: 80%;
+  word-spacing: 2px ;
+  line-height: 1.6;
+  margin: 0 auto;
+  font-size: 15px;
+  color: #748182;
+}
+
+
+.counter-icon{
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.counter{
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  color: #343434;
+}
+
+.counter-text{
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#team {
+  background-color: #f7f7f7;
+}
+
+#team .card{
+  border:none;
+}
+
+#team .card-body{
+  background-color: rgba(52, 52, 52, .8);
+  padding: 20px 0;
+  text-align: center;
+}
+
+#team .card-name{
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+#team .card-text{
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+    font-weight: bold;
+}

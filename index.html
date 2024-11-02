@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="media/media.css" />
@@ -575,6 +577,207 @@
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="mt-5 py-5">
+        <div class="container">
+          <div class="section-title">
+            <h2>Testimonials</h2>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-inner text-center">
+                  <div class="carousel-item active">
+                    <div class="testimonial-img">
+                      <img
+                        src="imgs/1_New1.jpg"
+                        class="rounded-circle"
+                        alt="..."
+                        width="100px"
+                      />
+                    </div>
+                    <div>
+                      <p class="testimonial-content">
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the when an unknown printer took a galley of
+                        type and scrambled it to make a type specimen book.
+                      </p>
+                      <h3 class="h6 fw-bold mt-4 mb-3">Alex Smith</h3>
+                      <p class="fw-bold fa-sm">Envato Customer</p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="testimonial-img">
+                      <img
+                        src="imgs/1_New1.jpg"
+                        class="rounded-circle"
+                        alt="..."
+                        width="100px"
+                      />
+                    </div>
+                    <div>
+                      <p class="testimonial-content">
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the when an unknown printer took a galley of
+                        type and scrambled it to make a type specimen book.
+                      </p>
+                      <h3 class="h6 fw-bold mt-4 mb-3">Alex Smith</h3>
+                      <p class="fw-bold fa-sm">Envato Customer</p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="testimonial-img">
+                      <img
+                        src="imgs/1_New1.jpg"
+                        class="rounded-circle"
+                        alt="..."
+                        width="100px"
+                      />
+                    </div>
+                    <div>
+                      <p class="testimonial-content">
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the when an unknown printer took a galley of
+                        type and scrambled it to make a type specimen book.
+                      </p>
+                      <h3 class="h6 fw-bold mt-4 mb-3">Alex Smith</h3>
+                      <p class="fw-bold fa-sm">Envato Customer</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-indicators position-static mt-4">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="statistics" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <div class="counter-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <p class="counter">850</p>
+                <p class="counter-text">Happy Customers</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <div class="counter-icon">
+                  <i class="fas fa-thumbs-up"></i>
+                </div>
+                <p class="counter">230</p>
+                <p class="counter-text">Complete Projects</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <div class="counter-icon">
+                  <i class="fas fa-bullhorn"></i>
+                </div>
+                <p class="counter">9450</p>
+                <p class="counter-text">Lines Of Code</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <div class="counter-icon">
+                  <i class="fas fa-cloud-download"></i>
+                </div>
+                <p class="counter">780</p>
+                <p class="counter-text">Files Downloaded</p>
+              </div>
+            </div>
+         
+          </div>
+        </div>
+        <script src="/js/jquery.counterup.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script>
+          jQuery(document).ready(function ($) {
+            $(".counter").counterUp({
+              delay: 10,
+              time: 1000,
+            });
+          });
+        </script>
+      </section>
+
+      <section id="team" class="py-5">
+        <div class="container">
+          <div class="section-title">
+            <h2>Our Team</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="card">
+                <img src="imgs/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center rounded-bottom-2">
+                  <p class="card-name">John Doe</p>
+                  <p class="card-text">Front-End Developer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="card">
+                <img src="imgs/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center rounded-bottom-2">
+                  <p class="card-name">John Doe</p>
+                  <p class="card-text">Front-End Developer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="card ">
+                <img src="imgs/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center rounded-bottom-2">
+                  <p class="card-name">John Doe</p>
+                  <p class="card-text">Front-End Developer</p>
                 </div>
               </div>
             </div>
