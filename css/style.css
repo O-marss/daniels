@@ -22,7 +22,7 @@ body {
   color: #343434;
 }
 
-p{
+p {
   color: #748182;
 }
 
@@ -47,18 +47,18 @@ h6 {
   font-family: montserrat;
 }
 
-img{
+img {
   width: 100%;
 }
 
 /* Section Center Title */
-.section-title{
+.section-title {
   margin-top: 50px;
   margin-bottom: 80px;
   text-align: center;
 }
 
-.section-title h2{
+.section-title h2 {
   position: relative;
   display: inline-block;
   font-weight: 900;
@@ -67,13 +67,13 @@ img{
   text-transform: capitalize;
 }
 
-.section-title h2::before{
+.section-title h2::before {
   content: ".";
   position: absolute;
   right: -12px;
 }
 
-.section-title h2::after{
+.section-title h2::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -296,11 +296,11 @@ span.gold-title {
 }
 
 /* !!Services section style */
-#service{
+#service {
   background-color: #f7f7f7;
 }
 
-.service-icon{
+.service-icon {
   width: 70px;
   height: 70px;
   background-color: #f7f7f7;
@@ -311,7 +311,7 @@ span.gold-title {
   transition: all 0.5s;
 }
 
-#service .card .card-body h3{
+#service .card .card-body h3 {
   color: #343434;
   margin-bottom: 15px;
   font-weight: 800;
@@ -319,15 +319,15 @@ span.gold-title {
 }
 
 /* !!Portfolio section style */
-#portfolio .nav-underline .nav-link:hover{
+#portfolio .nav-underline .nav-link:hover {
   border: none;
 }
 
-.portfolio-card{
+.portfolio-card {
   position: relative;
 }
 
-.portfolio-card-overlay{
+.portfolio-card-overlay {
   position: absolute;
   top: 5px;
   bottom: 5px;
@@ -345,7 +345,7 @@ span.gold-title {
   transform: translateY(0);
 }
 
-.portfolio-card-overlay h3{
+.portfolio-card-overlay h3 {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -355,7 +355,7 @@ span.gold-title {
   transition: all 0.5s;
 }
 
-.overlay-icons span{
+.overlay-icons span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -368,17 +368,17 @@ span.gold-title {
   color: #eee;
 }
 
-.overlay-icons span:hover{
+.overlay-icons span:hover {
   background-color: #eee;
   color: #111;
 }
 
-/* !!Portfolio section style */
-#testimonials{
+/* !!Testimonials section style */
+#testimonials {
   background-color: #f7f7f7;
 }
 
-.testimonial-img{
+.testimonial-img {
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -386,7 +386,7 @@ span.gold-title {
   margin: 0 auto 15px;
 }
 
-#testimonials .carousel-indicators [data-bs-target]{
+#testimonials .carousel-indicators [data-bs-target] {
   width: 10px;
   height: 10px;
   margin: 5px 7px;
@@ -396,60 +396,108 @@ span.gold-title {
   border: none;
 }
 
-#testimonials .carousel-indicators .active{
+#testimonials .carousel-indicators .active {
   background-color: #869791;
 }
 
-.testimonial-content{
+.testimonial-content {
   max-width: 80%;
-  word-spacing: 2px ;
+  word-spacing: 2px;
   line-height: 1.6;
   margin: 0 auto;
   font-size: 15px;
   color: #748182;
 }
 
-
-.counter-icon{
+.counter-icon {
   font-size: 30px;
   margin-bottom: 15px;
 }
 
-.counter{
+.counter {
   font-size: 30px;
   font-weight: 900;
   margin-bottom: 15px;
   color: #343434;
 }
 
-.counter-text{
+.counter-text {
   font-weight: 600;
   margin-bottom: 30px;
 }
 
+/* !!Team section style */
 #team {
   background-color: #f7f7f7;
 }
 
-#team .card{
-  border:none;
+#team .card {
+  border: none;
 }
 
-#team .card-body{
-  background-color: rgba(52, 52, 52, .8);
+#team .card-body {
+  background-color: rgba(52, 52, 52, 0.8);
   padding: 20px 0;
   text-align: center;
 }
 
-#team .card-name{
+#team .card-name {
   font-size: 25px;
   color: #fff;
   margin-bottom: 0;
 }
 
-#team .card-text{
+#team .card-text {
   font-size: 20px;
   color: #fff;
   text-transform: uppercase;
-    font-weight: bold;
+  font-weight: bold;
+}
+
+#team .team-card-img {
+  position: relative;
+  overflow: hidden;
+}
+#team .team-card-img img {
+  transition: all 0.4s ease 0s;
+}
+
+#team .team-card-img:hover img {
+  transform: scale(1.2);
+}
+
+#team .team-overlay {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  background: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  transition: 0.5s;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+}
+
+#team .card:hover .team-overlay {
+  cursor: pointer;
+  opacity: 1;
+  transform: rotateY(0deg) scale(1, 1);
+}
+
+#team .team-overlay ul li a {
+  border: 1px solid #000;
+  color: #fff;
+  background-color: #000;
+  display: block;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+#team .team-overlay ul li a:hover {
+  background-color: #fff;
+  color: #000;
 }
