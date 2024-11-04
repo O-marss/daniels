@@ -1,19 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="description" content="A responsive website template">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Daniels</title>
+    <link href="imgs/favicon.ico" rel="icon" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="media/media.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <nav id="navbar" class="navbar navbar-expand-lg default-navbar">
+      <div class="container">
+        <a class="navbar-brand text-uppercase" href="#">Daniles</a>
+        <button
+          class="navbar-toggler shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fas fa-bars fa-1x"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <header
       id="home"
-      class="d-flex justify-content-center align-items-center text-center mb-5"
+      class="d-flex justify-content-center align-items-center text-center mb-5 p-0 position-relative overflow-hidden"
     >
       <div class="container">
         <div class="row">
@@ -57,7 +107,7 @@
     <main>
       <section id="about" class="py-5">
         <div class="container">
-          <div class="row">
+          <figure class="row">
             <div class="col-lg-5">
               <div class="hero-img mb-5">
                 <img src="imgs/hero.jpg" alt="hero" class="w-100" />
@@ -68,7 +118,7 @@
                 <h2>About me</h2>
                 <p>UI / UX Designer & Web Developer</p>
               </div>
-              <div class="about-content">
+              <figcaption class="about-content">
                 <p>
                   I am <span class="fw-bolder">Jerry Daniels</span> Lorem Ipsum
                   is simply dummy text of the printing and typesetting industry.
@@ -78,7 +128,7 @@
                   remaining essentially unchanged. It was popularised in the
                   1960s with the release of Letraset sheets containing
                 </p>
-              </div>
+              </figcaption>
               <div class="skills mt-4 mb-5">
                 <div
                   class="progress mb-4"
@@ -129,7 +179,7 @@
                 </button>
               </div>
             </div>
-          </div>
+          </figure>
         </div>
       </section>
       <section id="service" class="py-5">
@@ -266,6 +316,7 @@
                       role="tab"
                       aria-controls="pills-all"
                       aria-selected="true"
+                      data-filter=".all"
                     >
                       All
                     </button>
@@ -280,6 +331,7 @@
                       role="tab"
                       aria-controls="pills-brand"
                       aria-selected="false"
+                      data-filter=".brand"
                     >
                       Brand
                     </button>
@@ -294,6 +346,7 @@
                       role="tab"
                       aria-controls="pills-design"
                       aria-selected="false"
+                      data-filter=".design"
                     >
                       Design
                     </button>
@@ -308,6 +361,7 @@
                       role="tab"
                       aria-controls="pills-graphic"
                       aria-selected="false"
+                      data-filter=".graphic"
                     >
                       Graphic
                     </button>
@@ -318,14 +372,14 @@
             <div class="col-12">
               <div class="tab-content" id="pills-tabContent">
                 <div
-                  class="tab-pane fade show active"
+                  class="tab-pane fade show active portfolio-all"
                   id="pills-all"
                   role="tabpanel"
                   aria-labelledby="pills-all-tab"
                   tabindex="0"
                 >
                   <div class="row g-4">
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 all mix">
                       <div>
                         <div class="portfolio-card">
                           <img src="imgs/portfolio/1.jpg" alt="portfolio1" />
@@ -342,7 +396,7 @@
                       </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 all mix">
                       <div>
                         <div class="portfolio-card">
                           <img src="imgs/portfolio/2.jpg" alt="portfolio2" />
@@ -359,7 +413,7 @@
                       </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 all mix">
                       <div>
                         <div class="portfolio-card">
                           <img src="imgs/portfolio/3.jpg" alt="portfolio3" />
@@ -376,7 +430,7 @@
                       </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 all mix">
                       <div>
                         <div class="portfolio-card">
                           <img src="imgs/portfolio/4.jpg" alt="portfolio4" />
@@ -393,7 +447,7 @@
                       </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 all mix">
                       <div>
                         <div class="portfolio-card">
                           <img src="imgs/portfolio/5.jpg" alt="portfolio5" />
@@ -410,7 +464,7 @@
                       </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 all mix">
                       <div>
                         <div class="portfolio-card">
                           <img src="imgs/portfolio/6.jpg" alt="portfolio6" />
@@ -430,14 +484,14 @@
                 </div>
 
                 <div
-                  class="tab-pane fade"
+                  class="tab-pane fade portfolio-brand"
                   id="pills-brand"
                   role="tabpanel"
                   aria-labelledby="pills-brand-tab"
                   tabindex="0"
                 >
                   <div class="row g-4">
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 brand mix">
                       <div>
                         <div class="portfolio-card">
                           <img src="imgs/portfolio/4.jpg" alt="portfolio4" />
@@ -454,7 +508,7 @@
                       </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 brand mix">
                       <div>
                         <div class="portfolio-card">
                           <img src="imgs/portfolio/6.jpg" alt="portfolio6" />
@@ -474,14 +528,14 @@
                 </div>
 
                 <div
-                  class="tab-pane fade"
+                  class="tab-pane fade portfolio-design"
                   id="pills-design"
                   role="tabpanel"
                   aria-labelledby="pills-design-tab"
                   tabindex="0"
                 >
                   <div class="row g-4">
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 design mix">
                       <div>
                         <div class="portfolio-card">
                           <img src="imgs/portfolio/2.jpg" alt="portfolio2" />
@@ -498,7 +552,7 @@
                       </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 design mix">
                       <div>
                         <div class="portfolio-card">
                           <img src="imgs/portfolio/5.jpg" alt="portfolio5" />
@@ -518,14 +572,14 @@
                 </div>
 
                 <div
-                  class="tab-pane fade"
+                  class="tab-pane fade portfolio-graphic"
                   id="pills-graphic"
                   role="tabpanel"
                   aria-labelledby="pills-graphic-tab"
                   tabindex="0"
                 >
                   <div class="row g-4">
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 graphic mix">
                       <div>
                         <div class="portfolio-card">
                           <img src="imgs/portfolio/1.jpg" alt="portfolio1" />
@@ -542,7 +596,7 @@
                       </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 graphic mix">
                       <div>
                         <div class="portfolio-card">
                           <img src="imgs/portfolio/3.jpg" alt="portfolio3" />
@@ -559,7 +613,7 @@
                       </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4 graphic mix">
                       <div>
                         <div class="portfolio-card">
                           <img src="imgs/portfolio/5.jpg" alt="portfolio5" />
@@ -751,7 +805,7 @@
           </div>
           <div class="row g-md-4 g-3">
             <div class="col-md-6 col-lg-4">
-              <div class="card">
+              <figure class="card">
                 <div class="team-card-img">
                   <img src="imgs/1.jpg" class="card-img-top" alt="..." />
                   <div
@@ -779,15 +833,15 @@
                     </ul>
                   </div>
                 </div>
-                <div class="card-body text-center rounded-bottom-2">
+                <figcaption class="card-body text-center rounded-bottom-2">
                   <p class="card-name">John Doe</p>
                   <p class="card-text">Front-End Developer</p>
-                </div>
-              </div>
+                </figcaption>
+              </figure>
             </div>
 
             <div class="col-md-6 col-lg-4">
-              <div class="card">
+              <figure class="card">
                 <div class="team-card-img">
                   <img src="imgs/2.jpg" class="card-img-top" alt="..." />
                   <div
@@ -815,15 +869,15 @@
                     </ul>
                   </div>
                 </div>
-                <div class="card-body text-center rounded-bottom-2">
+                <figcaption class="card-body text-center rounded-bottom-2">
                   <p class="card-name">Dave Wood</p>
                   <p class="card-text">Back-End Developer</p>
-                </div>
-              </div>
+                </figcaption>
+              </figure>
             </div>
 
             <div class="col-md-6 col-lg-4">
-              <div class="card">
+              <figure class="card">
                 <div class="team-card-img">
                   <img src="imgs/1.jpg" class="card-img-top" alt="..." />
                   <div
@@ -851,11 +905,11 @@
                     </ul>
                   </div>
                 </div>
-                <div class="card-body text-center rounded-bottom-2">
+                <figcaption class="card-body text-center rounded-bottom-2">
                   <p class="card-name">Claire Chedd</p>
                   <p class="card-text">Back-End Developer</p>
-                </div>
-              </div>
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
@@ -868,8 +922,12 @@
           </div>
           <div class="row g-4">
             <div class="col-lg-4">
-              <div class="contact-card d-flex flex-column align-items-center justify-content-center">
-                <div class="contact-icons d-flex align-items-center justify-content-center">
+              <div
+                class="contact-card d-flex flex-column align-items-center justify-content-center"
+              >
+                <div
+                  class="contact-icons d-flex align-items-center justify-content-center"
+                >
                   <i class="fa fa-location-arrow"></i>
                 </div>
                 <h3 class="h6 fw-bolder">Address</h3>
@@ -878,8 +936,12 @@
             </div>
 
             <div class="col-lg-4">
-              <div class="contact-card d-flex flex-column align-items-center justify-content-center">
-                <div class="contact-icons d-flex align-items-center justify-content-center">
+              <div
+                class="contact-card d-flex flex-column align-items-center justify-content-center"
+              >
+                <div
+                  class="contact-icons d-flex align-items-center justify-content-center"
+                >
                   <i class="fa fa-envelope"></i>
                 </div>
                 <h3 class="h6 fw-bolder">Email</h3>
@@ -888,8 +950,12 @@
             </div>
 
             <div class="col-lg-4">
-              <div class="contact-card d-flex flex-column align-items-center justify-content-center">
-                <div class="contact-icons d-flex align-items-center justify-content-center">
+              <div
+                class="contact-card d-flex flex-column align-items-center justify-content-center"
+              >
+                <div
+                  class="contact-icons d-flex align-items-center justify-content-center"
+                >
                   <i class="fa fa-phone"></i>
                 </div>
                 <h3 class="h6 fw-bolder">Phone</h3>
@@ -897,31 +963,73 @@
               </div>
             </div>
           </div>
-          <div class="row mt-5 py-4">
+          <form class="row mt-5 py-4">
             <div class="col-lg-6">
               <div class="mb-3">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Name"
+                />
               </div>
             </div>
             <div class="col-lg-6">
               <div class="mb-3">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Email"
+                />
               </div>
             </div>
             <div class="col-12">
               <div class="mb-3">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Message"></textarea>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="6"
+                  placeholder="Message"
+                ></textarea>
               </div>
             </div>
             <div class="col-auto">
-              <button type="submit" class="btn btn-primary mb-3" class="contact-submit">Submit</button>
+              <button
+                type="submit"
+                class="btn btn-primary mb-3"
+                class="contact-submit"
+              >
+                Submit
+              </button>
             </div>
-          </div>
+          </form>
         </div>
       </section>
     </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="d-flex justify-content-center align-items-center">
+            <p class="m-0">Copy Right 2024 © By Daniels All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+      integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
+    <script></script>
   </body>
 </html>

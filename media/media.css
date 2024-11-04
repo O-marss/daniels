@@ -6,6 +6,31 @@
 }
 
 @media (min-width: 993px) {
+  .default-navbar{
+    background-color: rgba(0, 0, 0, 0.01);
+  }
+
+  .default-navbar .navbar-nav{
+    background-color: rgba(0, 0, 0, 0.01);
+    border-top: none;
+  }
+  
+  .default-navbar .navbar-nav .nav-item a{
+    color: #fff;
+    font-size: 0.875rem;
+  }
+  
+  #navbar.default-navbar .navbar-nav .nav-item .active{
+    color: #fff;
+  }
+  
+  .default-navbar .navbar-nav .nav-item a::after{
+    background-color: #fff;
+  }
+
+  #navbar.navbar-scroll .navbar-nav .nav-item .active{
+    color: #000;
+  }
 }
 
 @media (min-width: 1200px) {
