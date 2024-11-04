@@ -240,8 +240,10 @@ const observer = new IntersectionObserver(entries => {
 
 observer.observe(header)
 
-var mixer = mixitup('.portfolio-all');
-var mixer = mixitup('.portfolio-brand');
-var mixer = mixitup('.portfolio-design');
-var mixer = mixitup('.portfolio-graphic');
+var mixer = mixitup('#pills-brand');
+var mixer = mixitup('#pills-design');
+var mixer = mixitup('#pills-graphic');
+var mixer = mixitup('#pills-all');
+
+
 

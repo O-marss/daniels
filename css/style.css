@@ -452,8 +452,30 @@ span.gold-title {
 }
 
 /* !!Portfolio section style */
-#portfolio .nav-underline .nav-link:hover {
-  border-width: 0;
+#portfolio .nav-item .nav-link{
+  border: none;
+}
+
+#portfolio .nav-item .nav-link{
+  position: relative;
+  padding: 0;
+}
+
+#portfolio .nav-item .nav-link::after{
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #111;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  z-index: -1;
+}
+
+#portfolio .nav-item .active::after{
+  width: 100%;
 }
 
 .portfolio-card {
@@ -832,3 +854,4 @@ footer {
     transform: rotate(360deg);
 }
 }
+
