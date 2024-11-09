@@ -525,6 +525,10 @@ span.gold-title {
   transition: all 0.5s;
 }
 
+.portfolio-card:hover .portfolio-card-overlay h3{
+  transform: translateY(0);
+}
+
 .overlay-icons span {
   display: -webkit-box;
   display: -ms-flexbox;
